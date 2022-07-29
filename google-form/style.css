@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1.5px rgba(128, 128, 128, 0.154);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 80%;
+    max-width: 460px;
+    margin: auto;
+}
+
+h1{
+    font-weight: 300;
+    margin-bottom: .5rem;
+}
+
+p{
+    color: rgb(76, 76, 76);
+    margin-bottom: 2rem;
+}
+
+.email , .password{
+    width: 100%;
+    position: relative;
+}
+
+.email-placeholder , .password-placeholder{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0 , -100%);
+    padding-inline: 1.2rem;
+    transition: all .5s;
+}
+
+.password-placeholder{
+    transform: translate(0 , -90%);
+}
+
+
+input{
+    width: 100%;
+    border: solid 1.5px rgba(128, 128, 128, 0.154);
+    padding: 1rem 1.2rem;
+    font-size:16px;
+    margin-bottom: 1rem;
+    position: relative;
+    background: transparent;
+    z-index: 2;
+}
+
+input:focus{
+    border:solid 2px #4c8bf5;
+}
+
+input:focus + p {
+    top: 0;
+    transform: translate(0 , -50%);
+    z-index: 3;
+    color: #4c8bf5;
+    background-color: white;
+    font-size: 14px;
+}
+
+.active{
+    top: 0;
+    transform: translate(0 , -50%);
+    z-index: 3;
+    color: grey;
+    background-color: white;
+    font-size: 14px;
+}
+
+input[type = "password"]{
+    margin-bottom: 1rem;
+}
+
+.forgot{
+    align-self: flex-start;
+    margin-bottom: 3rem;
+    color:#4c8bf5;
+    font-weight: bold;
+}
+
+div a{
+    color: #4c8bf5;
+    font-weight: bold;
+}
+
+div button{
+    background-color: #4c8bf5;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: .7rem 1.3rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+div button:hover{
+    background-color: #1a5aca;
+}
+
+div.form-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
