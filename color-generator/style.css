@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 520px;
+  width: 80%;
+  box-shadow: 0px 0px 11px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+}
+
+.left {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.right {
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  border: 2px solid red;
+  width: 50%;
+  height: 100%;
+  font-size: 18px;
+  padding: 0.5rem;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.icon {
+  height: 100%;
+  background-color: red;
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+i {
+  font-size: 18px;
+  margin-top: 2.5px;
+}
+
+button {
+  border-radius: 5px;
+  width: 50%;
+  padding: 0.65rem 1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 1450px) {
+  section {
+    max-width: 650px;
+    width: 100%;
+  }
+  .left {
+    width: 200px;
+    height: 200px;
+  }
+  .right {
+    width: 450px;
+  }
+}
