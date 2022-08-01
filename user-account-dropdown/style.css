@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+.container {
+	max-width: 320px;
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+img {
+	border-radius: 50%;
+}
+
+.first {
+	cursor: pointer;
+	margin-bottom: 0.5rem;
+}
+
+section {
+	background-color: rgb(35, 35, 35);
+	margin: auto;
+	width: 90%;
+	padding: 2rem 1.5rem;
+	color: white;
+	border-radius: 7px;
+	position: relative;
+}
+
+section::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-color: rgb(35, 35, 35);
+	position: absolute;
+	top: -1%;
+	left: 48.25%;
+	border-top-left-radius: 5px;
+	transform: rotate(45deg);
+}
+
+.profile-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.profile-name {
+	margin-bottom: 0.25rem;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+.profile-id {
+	color: grey;
+	font-size: 13.5px;
+}
+
+button {
+	width: 100%;
+	font-family: inherit;
+	font-size: 0.95rem;
+	padding-block: 0.6rem;
+	background-color: black;
+	border-radius: 5px;
+	margin-block: 1.5rem;
+	cursor: pointer;
+	color: white;
+	transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+	color: rgb(35, 35, 35);
+	background-color: white;
+}
+
+.profile-footer,
+.profile-footer div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.profile-footer {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.75rem;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+
+i {
+	cursor: pointer;
+}

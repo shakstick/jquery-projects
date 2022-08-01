@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightskyblue;
+}
+
+section {
+	width: 80%;
+	max-width: 900px;
+	min-height: 75px;
+	border-radius: 60px;
+	padding: 2rem 1rem;
+	margin: auto;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8rem;
+	position: relative;
+}
+
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+i {
+	font-size: 3rem;
+	cursor: pointer;
+	color: grey;
+	transition: all 0.4s ease-in-out;
+}
+
+p {
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+	color: grey;
+	transition: all 0.4s ease-in-out;
+}
+
+.active {
+	margin-bottom: 17px;
+	transition: all 0.4s ease-in-out;
+}
+
+.active p,
+.active i {
+	color: black !important;
+}
+
+.border-line {
+	width: 100px;
+	height: 4px;
+	position: absolute;
+	background-color: black;
+	bottom: 0;
+	left: 6%;
+	transition: all 0.4s ease-in-out;
+	border-radius: 7px;
+}
+
+@media (max-width: 1150px) {
+	section {
+		max-width: 400px;
+		height: 100px;
+		gap: 2rem;
+	}
+
+	div {
+		gap: 0.3rem;
+	}
+
+	i {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1.25rem;
+	}
+	.border-line {
+		width: 50px;
+		left: 10%;
+	}
+}
